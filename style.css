@@ -1,0 +1,173 @@
+body {
+  
+  margin: 0 auto 130px auto;
+}
+/* ヘッダー */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 250px;
+  margin: 0 auto;
+  padding: 0 4%;
+  max-width: 960px;
+
+}
+.logo {
+  font-size: 28px;
+  margin-left: 30px;
+  
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.link > a {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.heading{
+  text-align: center;
+  font-weight: bold;
+  font-size: 34px;
+  margin-bottom: 80px;
+}
+/* メインビジュアル */
+.main-photo {
+  max-width: 1920px;
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  margin-bottom: 100px;
+}
+/* About */
+#About {
+  max-width: 960px;
+  margin: 0 auto 130px auto;
+  padding: 0 4%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.name > p {
+  padding: 0;
+  margin: 0;
+}
+/* works */
+.items {
+  max-width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto;
+}
+.items > img {
+  width: 25%;
+  padding: 20px 20px;
+  align-items: centers;
+}
+/* News */
+#News {
+  max-width: 960px;
+  margin: 0 auto 130px auto;
+  padding: 0 4%;
+  box-sizing: inherit;
+}
+#News {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+ border-top: solid 1px black;
+}
+.date {
+  width: 15%;
+  border-bottom: solid 1px black;
+  padding: 15px;
+}
+
+.sentence {
+  width: 75%;
+  border-bottom: solid 1px black;
+  padding: 15px;
+}
+
+/* contact */
+#Contact {
+  max-width: 960px;
+  margin: 0 auto 130px auto;
+  padding: 0 4%;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.label {
+  width: 15%;
+}
+.Contact-input {
+  width: 80%;
+  margin-bottom: 15px;
+  height: 30px;
+}
+.Contact-textarea {
+  width: 80%;
+  margin-bottom: 30px;
+  height: 200px;
+}
+/* 送信ボタン */
+.button {
+  margin: auto;
+  width: 200px;
+  padding: 15px;
+  background-color: black;
+  color: aliceblue;
+}
+
+/* フッター */
+footer {
+  background-color: black;
+  color: aliceblue;
+  text-align: center;
+  padding: 5px 20px;
+}
+
+/* スマフォ用 */
+@media screen and (max-width: 600px) {
+  #About,#Works,#News,#Contact {
+    margin-bottom: 70px;
+  }
+  .heading {
+   margin-bottom: 40px;
+  }
+  .logo {
+    margin-top: 20px;
+  }
+  /* ヘッダー */
+  nav {
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  .link {
+    margin-left: 20px;
+  }
+  /* Works */
+  .items > img{
+    flex-direction: column;
+    width: 100%;
+  }
+  /* News */
+  #News > p {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  /* Contact */
+  #contact {
+    flex-direction: column;
+  }
+  .Contact-input,.label,.Contact-textarea {
+    width: 100%;
+  }
+ 
+}
